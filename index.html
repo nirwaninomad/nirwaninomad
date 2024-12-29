@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>निर्वाणी Nomad - Poetry Collection</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mukta', sans-serif;
+            background: linear-gradient(135deg, #faf6f1 0%, #f3e9e0 100%);
+            min-height: 100vh;
+            color: #4a3e36;
+        }
+        .header-text {
+            background: linear-gradient(45deg, #6d4c41, #8d6e63);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .poetry-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid rgba(210, 190, 180, 0.2);
+        }
+        .poetry-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(155, 132, 122, 0.1);
+        }
+        .card-title {
+            color: #5d4037;
+        }
+        .card-excerpt {
+            color: #7d6d66;
+        }
+        .read-more {
+            color: #8d6e63;
+            transition: color 0.2s ease;
+        }
+        .read-more:hover {
+            color: #6d4c41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4 header-text">निर्वाणी Nomad</h1>
+            <p class="text-xl text-gray-600">A Collection of Hindi Poetry</p>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Poetry Card 1 -->
+            <a href="poem1.html" class="poetry-card p-6 block">
+                <h2 class="text-xl font-semibold mb-3 card-title">वही सिद्दतें</h2>
+                <p class="card-excerpt mb-4">वही सिद्दतें, वही मौसम, वही बारिशें दौर-ए-फिराक...</p>
+                <div class="text-sm text-right">
+                    <span class="read-more">पूरी कविता पढ़ें →</span>
+                </div>
+            </a>
+
+            <!-- Add more poetry cards here as you write more poems -->
+            <div class="poetry-card p-6 opacity-50 cursor-not-allowed">
+                <h2 class="text-xl font-semibold mb-3 card-title">Coming Soon</h2>
+                <p class="card-excerpt mb-4">New poems will appear here...</p>
+                <div class="text-sm text-right">
+                    <span class="read-more">Stay tuned →</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
